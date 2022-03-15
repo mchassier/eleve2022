@@ -37,5 +37,17 @@ public class Classe {
 		return (laClasse);
 	}
 	
+	public boolean ajouterUnEleve (Eleve unEleve) {
+		boolean ajouter;
+		if(this.nbEleves==24) {
+			ajouter = false;
+		}
+		else {
+			ajouter = true;
+			this.uneClasse[this.nbEleves]=unEleve;
+			this.nbEleves++;
+		}
+		return ajouter;
+	}
 	
 }
