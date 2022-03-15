@@ -13,7 +13,7 @@ public class Main {
 		float note;
 		
 		nom = saisirNom();
-		note = saisirNote();
+		note = saisirNote(); 
 		
 		unEleve = new Eleve(nom, note);
 		System.out.println("Nom : "+ unEleve.getNom()+ " Note : "+ unEleve.getNote());

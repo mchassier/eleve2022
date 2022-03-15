@@ -88,7 +88,7 @@ class EleveTest {
 		assertEquals( "Erreur de nom","Nom:Mariannick Note:15.0",unEleve.toString());
 	}
 	
-	@Test
+/*	@Test
 	public void testNomException() {
 		//assertThrows(NomException.class)
 		String nom;
@@ -102,5 +102,5 @@ class EleveTest {
 				nom="Erreur";
 				assertThrows(NomException.class,)
 			}
-	}
+	}*/
 }

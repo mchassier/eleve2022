@@ -1,5 +1,6 @@
 package eleve;
 
+
 public class Eleve {
 	private String nom;
 	private float note;
@@ -26,7 +27,7 @@ public class Eleve {
 	}
 	
 	public String toString() {
-		return ("Nom:"+ this.getNom()+ " Note:"+ this.note);
+		return ("Nom : "+ this.getNom()+ " Note : "+ this.note);
 	}
 	
 }
