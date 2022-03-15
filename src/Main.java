@@ -1,6 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import eleve.Classe;
 import eleve.Eleve;
 import exceptions.NomException;
 import exceptions.NoteNegativeException;
@@ -11,6 +12,9 @@ public class Main {
 		Eleve unEleve;
 		String nom;
 		float note;
+		Classe sts1;
+		
+		sts1 = new Classe();
 		
 		nom = saisirNom();
 		note = saisirNote(); 
