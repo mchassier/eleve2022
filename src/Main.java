@@ -15,20 +15,12 @@ public class Main {
 		Classe sts1;
 		
 		sts1 = new Classe();
+		System.out.println(sts1.toString());
 		
-		nom = saisirNom();
-		note = saisirNote(); 
+		unEleve=saisirEleve();
 		
-		unEleve = new Eleve(nom, note);
-		System.out.println("Nom : "+ unEleve.getNom()+ " Note : "+ unEleve.getNote());
-		
-		nom = saisirNom();
-		unEleve.setNom(nom);
-		System.out.println(unEleve.toString());
-		
-		note = saisirNote();
-		unEleve.setNote(note);
-		System.out.println(unEleve.toString());
+		sts1.ajouterUnEleve(unEleve);
+		System.out.println(sts1.toString());
 	}
 	
 	private static String saisirNom() {
@@ -84,5 +76,18 @@ public class Main {
 			}
 		}while(!saisie);
 		return(note);
+	}
+	
+	static Eleve saisirEleve() {
+		String nom;
+		float note;
+		Eleve unEleve;
+		
+		nom = saisirNom();
+		note = saisirNote(); 
+		
+		unEleve = new Eleve(nom, note);
+		
+		return unEleve;
 	}
 }
