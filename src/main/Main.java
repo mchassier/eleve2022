@@ -1,10 +1,12 @@
+package main;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import eleve.Classe;
-import eleve.Eleve;
 import exceptions.NomException;
 import exceptions.NoteNegativeException;
+import metier.Classe;
+import metier.Eleve;
 
 public class Main {
 
@@ -78,7 +80,7 @@ public class Main {
 		return(note);
 	}
 	
-	static Eleve saisirEleve() {
+	public static Eleve saisirEleve() {
 		String nom;
 		float note;
 		Eleve unEleve;

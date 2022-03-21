@@ -1,21 +1,19 @@
 package test;
 
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import Main;
-import eleve.Eleve;
+import main.Main;
+import metier.Eleve;
 
 class MainTest {
 
 	@Test
-	void testSaisirEleve() {
+	final void testSaisirEleve() {
 		Eleve unEleve;
 		unEleve = Main.saisirEleve();
-		assertEquals("Mari",unEleve.getNom(),"Pas ok");
-		assertEquals(12f,unEleve.getNote(),"Pas ok");
+		assertEquals("Mari",unEleve.getNom(),"Problème de nom");
 	}
 
 }

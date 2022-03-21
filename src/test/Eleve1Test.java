@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import eleve.Eleve;
+import metier.Eleve;
 
 class Eleve1Test {
 

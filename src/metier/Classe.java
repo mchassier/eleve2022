@@ -1,4 +1,4 @@
-package eleve;
+package metier;
 
 public class Classe {
 	private Eleve uneClasse[];
